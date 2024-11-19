@@ -1,0 +1,11 @@
+@test2
+
+###getConcatenation(int[] nums) # function that returns an array concantenated with iteself #int[]
+
+main() {
+    arr(int) a = {1,2,3};
+    arr(int) ans = getConcatenation(a);
+    loop(int i = 0; i<ans.length ;i++) {
+        print(ans[i] + ", ");
+    }
+}

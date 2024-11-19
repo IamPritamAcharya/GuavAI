@@ -1,0 +1,14 @@
+@test
+
+func int sum(int[] arr) {
+	int sum = 0;
+	loop(int i = 0; i < arr.length; i++) {
+		sum+=arr[i];
+	}
+	return sum;
+}
+
+main() {	
+	arr(int) arr1 = {1,2,3,3};
+	shout(sum(arr1));
+}

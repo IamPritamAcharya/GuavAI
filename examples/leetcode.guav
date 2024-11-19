@@ -1,0 +1,25 @@
+@leetcode
+
+func sortColors(int[] nums) {
+    boolean swapped;
+    loop(int i = 0; i < nums.length; i++) { 
+        swapped = false;
+        loop(int j = 1; j < nums.length; j++) {
+            if(nums[j]<nums[j-1]) {
+                int k = nums[j];
+                nums[j] = nums[j-1];
+                nums[j-1] = k;
+                swapped = true;
+            }
+        }
+        if (!swapped) break;
+    }
+    foreach(int i : nums) {
+        shout(i);
+    }
+}
+
+main(){
+    arr(int) arr1 = {2,0,2,1,1,0};
+    sortColors(arr1);
+}
